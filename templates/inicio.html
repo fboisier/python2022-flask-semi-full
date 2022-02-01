@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block titulo %} INICIO DE MI PORTAL {% endblock %}
+
+
+{% block contenido %}
+
+{% include 'menu.html'%}
+
+<div class="container mt-5">
+    
+<h1>LA VARIABLE DE SESION NOMBRE ES: {{ session.usuario }}</h1>
+
+</div>
+
+{% endblock %}
